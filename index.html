@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MET Intra College Symposium</title>
-	<link rel="icon" type="image/x-icon" href="./images/logo.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./index.css">
-</head>
-<body>
-	<!-- home page -->
-	<div class="home" id="home">
-		<nav class="nav">
-			<a href="index.html" class="logo">
-				<img src="./images/logo.png" alt="logo" class="logoImg">
-				<span class="logoTxt logoTxt1">METCRUZ</span> 
-				<span class="logoTxt logoTxt2">2K23</span>
-			</a>
-			<div class="navLinks" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-				<ul>
-					<li><a href="#home" onclick="hideMenu()">Home</a></li>
-					<li><a href="#about" onclick="hideMenu()">About</a></li>
-					<li><a href="#event" onclick="hideMenu()">Events</a></li>
-					<li><a href="#contact" onclick="hideMenu()">Contact</a></li>
-				</ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MET Intra College Symposium</title>
+		<link rel="icon" type="image/x-icon" href="./images/logo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<!-- home page -->
+		<div class="home" id="home">
+			<nav class="nav">
+				<a href="index.html" class="logo">
+					<img src="./images/logo.png" alt="logo" class="logoImg" />
+					<span class="logoTxt logoTxt1">METCRUZ</span>
+					<span class="logoTxt logoTxt2">2K23</span>
+				</a>
+				<div class="navLinks" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="#home" onclick="hideMenu()">Home</a></li>
+						<li><a href="#about" onclick="hideMenu()">About</a></li>
+						<li>
+							<a href="#event" onclick="hideMenu()">Events</a>
+						</li>
+						<li>
+							<a href="#contact" onclick="hideMenu()">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<div class="homeContent">
+				<h1>
+					<span class="homeConTxt1">METCRUZ</span
+					><span class="homeConTxt2">2K23</span>
+				</h1>
+				<p>INTRA COLLEGE SYMPOSIUM</p>
+				<a href="" class="homeBtn">MARCH 17,2023</a>
 			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
-		<div class="homeContent">
-			<h1><span class="homeConTxt1">METCRUZ</span><span class="homeConTxt2">2K23</span> </h1>
-			<p>INTRA COLLEGE SYMPOSIUM</p>
-			<a href="" class="homeBtn">MARCH 17,2023</a>
 		</div>
-	</div>
-	<div class="homeCards">
+		<div class="homeCards">
 			<div class="homeCard eventCard c1">
 				<div><i class="fa fa-pencil"></i>Events</div>
 				<p>
-					METCRUZ 2K23 is a Intra college Technical and Non-Technical symposium organized by CSE Students of MET Engineering College.The motto of this symposium is to bring out the technical knowledge and ideas to given problem statements with their uniqueness and also exploring the talents.
+					METCRUZ 2K23 is a Intra college Technical and Non-Technical
+					symposium organized by CSE Students of MET Engineering
+					College.The motto of this symposium is to bring out the
+					technical knowledge and ideas to given problem statements
+					with their uniqueness and also exploring the talents.
 				</p>
 				<a href="#">MORE INFO.</a>
 			</div>
 			<div class="homeCard aboutCard c2">
 				<div><i class="fa fa-graduation-cap"></i>About College</div>
-				<p>Mogals Educational and Charitable Trust aim to achieve appreciable growth in the field of Engineering and Technology and to construct a Research and Development Centre which will be useful for society and for the nation. 
+				<p>
+					Mogals Educational and Charitable Trust aim to achieve
+					appreciable growth in the field of Engineering and
+					Technology and to construct a Research and Development
+					Centre which will be useful for society and for the nation.
 				</p>
 				<a href="#">MORE INFO.</a>
 			</div>
 			<div class="homeCard deptCard c3">
 				<div><i class="fa fa-book"></i>About Dept</div>
 				<p>
-					the CSE Dpartment is aim to Inspire, Enable, Empower and Energize our student members to enhance their technical interests by providing them a platform to show case their skills.
+					the CSE Dpartment is aim to Inspire, Enable, Empower and
+					Energize our student members to enhance their technical
+					interests by providing them a platform to show case their
+					skills.
 				</p>
 				<a href="#">MORE INFO.</a>
 			</div>
@@ -63,27 +87,42 @@
 		<!-- about page -->
 		<div class="about" id="about">
 			<div class="checkBoxes">
-				<div class="cb cb1" id="cbE" onclick="toggleVisibility('eventContent');">
-					<h1>EVENTS</h1>
-					<label for="c1">
-						<input type="checkbox" id="c1">
+				<div
+					class="cb cb1"
+					id="cbE"
+					onclick="toggleVisibility('eventContent','eh','el');"
+				>
+					<h1 id="eh">EVENTS</h1>
+					<label for="c1" id="el">
+						<input type="checkbox" id="c1" />
+						<span></span>
 					</label>
 				</div>
-				<div class="cb cb2" id="cbR" onclick="toggleVisibility('registerContent');">
-					<h1>REGISTRATION</h1>
-					<label for="c2">
-						<input type="checkbox" id="c2">
+				<div
+					class="cb cb2"
+					id="cbR"
+					onclick="toggleVisibility('registerContent','rh','rl');"
+				>
+					<h1 id="rh">REGISTRATION</h1>
+					<label for="c2" id="rl">
+						<input type="checkbox" id="c2" />
+						<span></span>
 					</label>
 				</div>
-				<div class="cb cb3" id="cbC" onclick="toggleVisibility('commiteeContent');">
-					<h1>EVENT COMMITEE</h1>
-					<label for="c3">
-						<input type="checkbox" id="c3">
+				<div
+					class="cb cb3"
+					id="cbC"
+					onclick="toggleVisibility('commiteeContent','ch','cl');"
+				>
+					<h1 id="ch">EVENT COMMITEE</h1>
+					<label for="c3" id="cl">
+						<input type="checkbox" id="c3" />
+						<span></span>
 					</label>
 				</div>
 			</div>
- 	 		<div class="eventContent" id="eventContent">
-				<img src="./images/event.jpg" alt="event" class="eventImg">
+			<div class="eventContent" id="eventContent">
+				<img src="./images/event.jpg" alt="event" class="eventImg" />
 				<div class="eventTxt">
 					<h2>EVENTS</h2>
 					<ul>
@@ -103,45 +142,56 @@
 						</ol>
 					</ul>
 				</div>
-			</div>  
-			
- 			<div class="registerContent check" id="registerContent">
-				<img src="./images/register.jpg" alt="register" class="registerImg">
+			</div>
+
+			<div class="registerContent check" id="registerContent">
+				<img
+					src="./images/register.jpg"
+					alt="register"
+					class="registerImg"
+				/>
 				<div class="registrationTxt">
 					<h2>REGISTRATION</h2>
-					<p>The participant can participate with team or solo in both technical and non technical events</p>
+					<p>
+						The participant can participate with team or solo in
+						both technical and non technical events
+					</p>
 					<a href="" class="registerBtn">REGISTER HERE</a>
 				</div>
-			</div> 
- 
- 		<div class="commiteeContent check" id="commiteeContent">
- 			<img src="./images/commitee.jpg" alt="commitee" class="commiteeImg">
- 			<div class="commiteeTxt">
- 				<h2>Convenor</h2>
- 				<h3>Mr.G.Jeyaram   HOD(CSE)</h3>
- 				<h2>Organizing Members</h2>
- 				<ol>
- 					<li>Mr.Pravin   3rd Year CSE</li>
- 					<li>Mr.Arul Sivaraj   3rd Year CSE</li>
- 					<li>Mr.Aadhi Kesavan   2nd Year CSE</li>
- 					<li>Mr.Pattu Raja   2nd Year CSE</li>
- 				</ol>
- 				<h2>Program Commitee</h2>
- 				<ol>
- 					<li>Mr.Jevinston   3rd Year CSE</li>
- 					<li>Mr.Thetchana Moorthy   3rd Year CSE</li>
- 					<li>Ms.Mahesh Bala   3rd Year CSE</li>
- 					<li>Ms.Jeya Sudha   3rd Year CSE</li>
- 					<li>Mr.Suman   2nd Year CSE</li>
- 				</ol>
- 				<h2>Coordinators</h2>
- 				<ol>
- 					<li>Mr.Thanush   3rd Year CSE</li>
- 					<li>Ms.Siva Sangari   3rd Year CSE</li>
- 				</ol>
- 			</div> 
- 		</div>  
- 	</div>
+			</div>
+
+			<div class="commiteeContent check" id="commiteeContent">
+				<img
+					src="./images/commitee.jpg"
+					alt="commitee"
+					class="commiteeImg"
+				/>
+				<div class="commiteeTxt">
+					<h2>Convenor</h2>
+					<h3>Mr.G.Jeyaram HOD(CSE)</h3>
+					<h2>Organizing Members</h2>
+					<ol>
+						<li>Mr.Pravin 3rd Year CSE</li>
+						<li>Mr.Arul Sivaraj 3rd Year CSE</li>
+						<li>Mr.Aadhi Kesavan 2nd Year CSE</li>
+						<li>Mr.Pattu Raja 2nd Year CSE</li>
+					</ol>
+					<h2>Program Commitee</h2>
+					<ol>
+						<li>Mr.Jevinston 3rd Year CSE</li>
+						<li>Mr.Thetchana Moorthy 3rd Year CSE</li>
+						<li>Ms.Mahesh Bala 3rd Year CSE</li>
+						<li>Ms.Jeya Sudha 3rd Year CSE</li>
+						<li>Mr.Suman 2nd Year CSE</li>
+					</ol>
+					<h2>Coordinators</h2>
+					<ol>
+						<li>Mr.Thanush 3rd Year CSE</li>
+						<li>Ms.Siva Sangari 3rd Year CSE</li>
+					</ol>
+				</div>
+			</div>
+		</div>
 		<script src="./index.js"></script>
-</body>
+	</body>
 </html>
