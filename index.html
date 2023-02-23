@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- home page -->
-	<div class="home">
+	<div class="home" id="home">
 		<nav class="nav">
 			<a href="index.html" class="logo">
 				<img src="./images/logo.png" alt="logo" class="logoImg">
@@ -23,10 +23,10 @@
 			<div class="navLinks" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Events</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#home" onclick="hideMenu()">Home</a></li>
+					<li><a href="#about" onclick="hideMenu()">About</a></li>
+					<li><a href="#event" onclick="hideMenu()">Events</a></li>
+					<li><a href="#contact" onclick="hideMenu()">Contact</a></li>
 				</ul>
 			</div>
 			<i class="fa fa-bars" onclick="showMenu()"></i>
@@ -60,6 +60,88 @@
 			</div>
 		</div>
 
+		<!-- about page -->
+		<div class="about" id="about">
+			<div class="checkBoxes">
+				<div class="cb cb1" id="cbE" onclick="toggleVisibility('eventContent');">
+					<h1>EVENTS</h1>
+					<label for="c1">
+						<input type="checkbox" id="c1">
+					</label>
+				</div>
+				<div class="cb cb2" id="cbR" onclick="toggleVisibility('registerContent');">
+					<h1>REGISTRATION</h1>
+					<label for="c2">
+						<input type="checkbox" id="c2">
+					</label>
+				</div>
+				<div class="cb cb3" id="cbC" onclick="toggleVisibility('commiteeContent');">
+					<h1>EVENT COMMITEE</h1>
+					<label for="c3">
+						<input type="checkbox" id="c3">
+					</label>
+				</div>
+			</div>
+ 	 		<div class="eventContent" id="eventContent">
+				<img src="./images/event.jpg" alt="event" class="eventImg">
+				<div class="eventTxt">
+					<h2>EVENTS</h2>
+					<ul>
+						<li>NON-TECHNICAL EVENTS</li>
+						<ol>
+							<li>MET EXPLORER</li>
+							<li>RACKING BRAINS</li>
+							<li>MEME CODERS</li>
+							<li>TECH CONNECT</li>
+							<li>JUST A MINUTE</li>
+							<li>MEDIA CONFERRAL</li>
+						</ol>
+						<li>TECHNICAL EVENTS</li>
+						<ol>
+							<li>PAPER PROFFERING</li>
+							<li>CRACK THE CODE</li>
+						</ol>
+					</ul>
+				</div>
+			</div>  
+			
+ 			<div class="registerContent check" id="registerContent">
+				<img src="./images/register.jpg" alt="register" class="registerImg">
+				<div class="registrationTxt">
+					<h2>REGISTRATION</h2>
+					<p>The participant can participate with team or solo in both technical and non technical events</p>
+					<a href="" class="registerBtn">REGISTER HERE</a>
+				</div>
+			</div> 
+ 
+ 		<div class="commiteeContent check" id="commiteeContent">
+ 			<img src="./images/commitee.jpg" alt="commitee" class="commiteeImg">
+ 			<div class="commiteeTxt">
+ 				<h2>Convenor</h2>
+ 				<h3>Mr.G.Jeyaram   HOD(CSE)</h3>
+ 				<h2>Organizing Members</h2>
+ 				<ol>
+ 					<li>Mr.Pravin   3rd Year CSE</li>
+ 					<li>Mr.Arul Sivaraj   3rd Year CSE</li>
+ 					<li>Mr.Aadhi Kesavan   2nd Year CSE</li>
+ 					<li>Mr.Pattu Raja   2nd Year CSE</li>
+ 				</ol>
+ 				<h2>Program Commitee</h2>
+ 				<ol>
+ 					<li>Mr.Jevinston   3rd Year CSE</li>
+ 					<li>Mr.Thetchana Moorthy   3rd Year CSE</li>
+ 					<li>Ms.Mahesh Bala   3rd Year CSE</li>
+ 					<li>Ms.Jeya Sudha   3rd Year CSE</li>
+ 					<li>Mr.Suman   2nd Year CSE</li>
+ 				</ol>
+ 				<h2>Coordinators</h2>
+ 				<ol>
+ 					<li>Mr.Thanush   3rd Year CSE</li>
+ 					<li>Ms.Siva Sangari   3rd Year CSE</li>
+ 				</ol>
+ 			</div> 
+ 		</div>  
+ 	</div>
 		<script src="./index.js"></script>
 </body>
 </html>
