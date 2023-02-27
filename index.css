@@ -33,7 +33,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	height: 70px;
 	padding: 1% 4%;
 	background: rgba(22, 34, 57, 0.95);
 	z-index: 10;
@@ -116,7 +116,7 @@ body {
 }
 
 .homeContent p {
-	margin: 10px 0 10px;
+	margin: 3px 0 20px;
 	font-size: 20px;
 	color: turquoise;
 }
@@ -361,6 +361,7 @@ nav .fa {
 /*about page*/
 
 .about {
+/*	position: relative;*/                          
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
@@ -417,8 +418,6 @@ nav .fa {
 #el {
 	border: 2px solid #f5a425;
 }
-
-/*checkboxes responsive*/
 
 @media (max-width: 550px) {
 	.cb h1 {
@@ -479,6 +478,17 @@ nav .fa {
 	}
 }
 
+@media(max-width: 500px){
+	.eventContent{
+		padding: 10px 10px 0 30px;
+	}
+
+	.eventTxt ul li {
+		font-size: 23px;
+	}
+}
+
+/*
 @media (max-width: 500px) {
 	.eventContent {
 		padding: 10px 70px;
@@ -497,7 +507,7 @@ nav .fa {
 	.eventTxt ul li {
 		font-size: 18px;
 	}
-}
+}*/
 
 /*register content*/
 
@@ -878,7 +888,7 @@ nav .fa {
 
 @media (max-width: 1100px) {
 	.eventHeading {
-		visibility: hidden;
+		display: none;
 	}
 }
 
@@ -1030,6 +1040,9 @@ nav .fa {
 }
 
 @media (max-width: 520px) {
+	.contact{
+		height: 90vh;
+	}
 	.contactCard {
 		padding: 10px;
 		width: 80%;
@@ -1042,7 +1055,11 @@ nav .fa {
 }
 
 @media (max-width: 450px) {
+	.contact{
+		justify-content: flex-start;
+	}
 	.contactCard {
+		margin-top: 80px;
 		padding: 5px 0 5px 5px;
 	}
 
