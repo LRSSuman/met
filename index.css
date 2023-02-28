@@ -1019,6 +1019,14 @@ nav .fa {
 	margin-top: 20px;
 }
 
+.contactContent h2{
+	margin-top: 5px;
+}
+
+.contactContent h3{
+	margin-top: 4px;
+}
+
 .contactContent div {
 	margin-left: 20px;
 }
@@ -1069,5 +1077,11 @@ nav .fa {
 	}
 	.contactContent h1 {
 		font-size: 25px;
+	}
+	.contactContent h2{
+		font-size: 18px;
+	}
+	.contactContent h3{
+		font-size: 14px;
 	}
 }
